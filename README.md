@@ -17,11 +17,11 @@ It works only on an existing DB that you want to encrypt
 
 Usage or how to use Sqlite3En ?
 
-Importing: 
+# Importing: 
 
 	from Sqlite3En import Sqlite3En
 
-To encrypt an existing DB you can use this function :
+# To encrypt an existing DB you can use this function :
 
 	Sqlite3En.Encrypt_existing_DB_By_Password (Exist_DB_Path , Exist_DB_Name ,Exist_Table_Name , password = 'password' )
 
@@ -68,7 +68,7 @@ For example :
 		Sec4.Kn and so on
 
 
-To open an encrypt DB you can use the function:
+# To open an encrypt DB you can use the function:
 
 	Sqlite3En.Open_Encrypted_DB_By_Password (Encryp_DB_Path_Name,Orgenal_DB_Name,Orgenal_DB_Table_Name,Memory_conn , password = 'password' )
 
@@ -113,7 +113,7 @@ Be careful that if you add more than 2 DBs you have to use diferent TRIGGERS nam
 
 password : is the password which used to encrypt the DB 
 
-Save changes 
+# Save changes 
 
 3 kinds of operation on an encrypted DB can be saved 
 
@@ -137,7 +137,7 @@ DB_Path : is the path where (.Kn files) are
 
 password : is the password which used to encrypt the DB 
 
-Some examples:
+# Some examples:
 
 If you want to open 2 encrypted DBs (First.db and Sec.db) :
 files of First.db after encrypted  will be :
@@ -206,7 +206,7 @@ To delete value in Sec DB :
 	Sqlite3En.Save_Change_On_EnDB_By_Password(Memory_conn,'Sec.db','Table_Name2','DBfile2\\',password = 'password' )
 
 
-Notes:
+# Notes:
 1- Do not close Memory_conn while your program is runing if you close Memory_conn then 
 all opened DBs (by Open_Encrypted_DB_By_Password function and Add_Encrypted_DB_By_Password function) 
 will be closed too.
