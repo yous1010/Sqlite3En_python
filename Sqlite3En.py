@@ -337,7 +337,7 @@ def __Add_SubTable_Name_Column(DB_N,DB_Table,DB_N2):
 #+ :one or mor
 #* :zero or mor
 
-def MyFind(pat,text):
+def _MyFind(pat,text):
     match = re.search(pat,text)
     if match:
         return match.group()
